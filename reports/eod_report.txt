@@ -1,0 +1,6 @@
+=== End of Day Strategy Report ===
+
+Trades: 10
+Total Return %: -0.54
+Max Drawdown %: -0.54
+Sharpe: -0.81
