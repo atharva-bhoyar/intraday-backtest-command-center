@@ -21,24 +21,24 @@ Visualize live and historical strategy performance for rapid decision-making
 ## System Architecture
 .
 ├── data/
-│   ├── raw/              # Raw intraday price & volume data
-│   ├── processed/        # Cleaned & feature-engineered datasets
+│   ├── raw/              # Raw intraday OHLCV market data
+│   ├── processed/        # Cleaned, validated & feature-engineered datasets
 │
 ├── src/
-│   ├── data_pipeline.py  # Data ingestion, cleaning & validation
-│   ├── strategy.py       # Trading logic & signal generation
-│   ├── backtest.py       # Execution simulation & PnL calculation
-│   ├── metrics.py        # Risk & performance metrics (Sharpe, DD)
-│   └── reporting.py      # Automated EOD reporting
+│   ├── data_pipeline.py  # Market data ingestion, cleaning & validation
+│   ├── strategy.py       # Intraday trading logic & signal generation
+│   ├── backtest.py       # Trade execution simulation & PnL calculation
+│   ├── metrics.py        # Risk & performance metrics (Sharpe, Drawdown)
+│   └── reporting.py      # Automated End-of-Day (EOD) reporting
 │
 ├── dashboard/
-│   └── app.py            # Streamlit trading command center
+│   └── app.py            # Streamlit-based trading command center
 │
 ├── notebooks/
-│   └── exploratory.ipynb # Strategy research & signal exploration
+│   └── exploratory.ipynb # Strategy research, signal analysis & experimentation
 │
-├── requirements.txt
-└── README.md
+├── requirements.txt      # Project dependencies
+└── README.md             # Project documentation
 
 ## Data Pipeline
 
